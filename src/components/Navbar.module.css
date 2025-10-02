@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.nav {
+  font-family: "Poppins", Arial, sans-serif;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  min-height: 64px;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+}
+
+.link:hover {
+  border-bottom: 2px solid #000;
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 2px;
+  background: #000;
+  display: block;
+  position: relative;
+}
+.menuIcon::before,
+.menuIcon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transition: 0.3s;
+}
+.menuIcon::before {
+  top: -8px;
+}
+.menuIcon::after {
+  top: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+  .links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 2px solid #000;
+    display: none;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+  .open {
+    display: flex;
+  }
+  .menuBtn {
+    display: block;
+  }
+}
