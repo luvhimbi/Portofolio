@@ -1,0 +1,39 @@
+.skillsSection {
+  margin-top: 2rem;
+}
+
+.skillsTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.skillsCategory {
+  margin-bottom: 1.5rem;
+}
+
+.skillsCategory h3 {
+  color: #000;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.skill {
+  background: #222;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
